@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="room reservation" max_length="40" name="x_348793_hall_rese_room_reservation" type="collection">
+        <element label="end time" max_length="40" name="end_time" type="glide_date_time"/>
+        <element label="reserved by" max_length="32" name="reserved_by" reference="imp_user" type="reference"/>
+        <element label="room number" max_length="40" name="room_number" type="string"/>
+        <element label="start time" max_length="40" name="start_time" type="glide_date_time"/>
+        <index name="index">
+            <element name="reserved_by"/>
+        </index>
+    </element>
+</database>
